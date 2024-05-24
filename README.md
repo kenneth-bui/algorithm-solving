@@ -1,7 +1,8 @@
 Create folder named **.vscode/**
+
 Create new file named **launch.json**
 
-Copy and paste the config below
+Copy and paste the config below:
 
 ```
 {
