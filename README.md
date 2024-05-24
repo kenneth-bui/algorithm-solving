@@ -1,7 +1,8 @@
 Create folder named **.vscode/**
+
 Create new file named **launch.json**
 
-Copy and paste the config below
+Copy and paste the config below:
 
 ```
 {
@@ -23,5 +24,8 @@ Copy and paste the config below
 }
 ```
 
-Update the specific filename for debugging
-Eg. "program": "${workspaceFolder}\\kenneth\\happyNumber.js"
+Update the specific filename for debugging:
+
+```
+"program": "${workspaceFolder}\\kenneth\\happyNumber.js"
+```
