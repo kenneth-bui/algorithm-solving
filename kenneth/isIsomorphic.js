@@ -3,15 +3,13 @@
  * @param {string} t
  * @return {boolean}
  */
-var isIsomorphic = function (s, t) {
-  let arrS = s.split("");
-  let arrT = t.split("");
-  let objC = {};
-  for (let i = 0; i < arrS.length; i++) {
-    if (objC[arrS[i]]) {
-      if (objC[arrS[i]] !== arrT[i]) return false;
-    } else if (Object.values(objC).indexOf(arrT[i]) > -1) return false;
-    else objC[arrS[i]] = arrT[i];
+const isIsomorphic = (s, t) => {
+  let mapS = {};
+  for (let i = 0; i < s.length; i++) {
+    if (mapS[s[i]]) {
+      if (mapS[s[i]] !== t[i]) return false;
+    } else if (Object.values(mapS).indexOf(t[i]) > -1) return false;
+    else mapS[s[i]] = t[i];
   }
   return true;
 };
