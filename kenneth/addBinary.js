@@ -21,6 +21,8 @@ var addBinary = function (a, b) {
   return result;
 };
 
+module.exports = addBinary;
+
 const a =
   "10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101";
 const b =
